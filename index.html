@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.ico" type="images" />
+    <title>TodoApp</title>
+  </head>
+  <!-- Dark_Theem -->
+  <body class="Dark_Theem">
+    <div class="container">
+      <header class="header">
+        <div class="header_links">
+          <a href="#" target="_blank">
+            <img src="assets/facebook.svg" alt="facebook" class="link_icon" />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="assets/icon-youtube.svg"
+              alt="youtube"
+              class="link_icon" />
+          </a>
+          <a href="https://github.com/Anasbiomy" target="_blank">
+            <img src="assets/icon-github.svg" alt="github." class="link_icon" />
+          </a>
+        </div>
+
+        <button class="header_themtoggle">toggle Theem</button>
+      </header>
+
+      <div class="app_wrapper">
+        <label for="searchInput" class="input_section_header"
+          >قائمة المهام</label
+        >
+        <form action="#" class="input_section_field">
+          <button class="input_button">إضافة</button>
+          <input
+            id="searchInput"
+            type="text"
+            class="input_data"
+            placeholder="....قم بإضافة مهمة جديدة" />
+        </form>
+        <button class="taskesapperance_button">
+          <span class="hide">hide</span>
+          <span class="show">show</span>
+          completed Tasks
+        </button>
+
+        <ul class="Task_Items_list hidetasks"></ul>
+      </div>
+    </div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
