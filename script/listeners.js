@@ -73,11 +73,7 @@ export const hideCheckedData = () => {
     let fetchishideData;
     if (fetchDatafromDB("isHideData") === true) fetchishideData = true;
     else fetchishideData = false;
-    console.log(fetchishideData);
-
     fetchishideData = !fetchishideData;
-    console.log(fetchishideData);
-
     saveToDB("isHideData", fetchishideData);
 
     if (fetchishideData) {
