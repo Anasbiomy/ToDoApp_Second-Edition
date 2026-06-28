@@ -24,6 +24,7 @@ export const listnerTaskAddetion = () => {
     e.preventDefault();
     // if (!input_dataElement.value) return;
     addTask(input_dataElement.value);
+    input_dataElement.value = "";
     renderTask();
   });
 };
